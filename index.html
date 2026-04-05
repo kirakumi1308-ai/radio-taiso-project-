@@ -1077,7 +1077,7 @@ async function loadMap() {
 // データ読み込み
 // ============================================================
 async function loadData() {
-  const monday = getThisWeekMonday();
+const monday = '2026-03-30';
   const [r1, r2] = await Promise.all([
     sb.from('participations').select('*').eq('date', getToday()),
     sb.from('participations').select('*').gte('date', monday),
